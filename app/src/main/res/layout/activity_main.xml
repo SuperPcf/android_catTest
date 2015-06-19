@@ -1,0 +1,168 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@raw/bg2"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:background="#ff0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text ="@string/Apphead"
+            android:gravity="center_horizontal"
+            android:textColor="#0f0"
+            android:textSize="48px"
+
+
+            android:id="@+id/headTxt"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text ="@string/AppBackground"
+            android:clickable="true"
+            android:textColor="#0f0"
+            android:textSize="24px"
+            android:id="@+id/bgTxt"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="500px"
+
+        android:orientation="vertical"
+        android:layout_weight="0.97"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:id="@+id/question"
+            />
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_width="fill_parent"
+            android:layout_height="300px"
+            android:scaleType="fitCenter"
+            android:maxHeight="300px"
+            android:maxWidth="400px"
+
+
+            android:id="@+id/image"
+
+            />
+
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/radioButtonA" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/radioButtonB" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/radioButtonC" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/radioButtonD" />
+
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40px"
+            android:gravity="left">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:id="@+id/answerImg"
+
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/answeTxt"
+            />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btnSure"
+            android:text="@string/sure"
+            android:onClick="btnSureOnClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:background="#0ff"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+
+        android:layout_weight="0.05">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:id="@+id/btnPgUp"
+            android:text="@string/PgUp"
+            android:onClick="btnPgUpOnClick"/>
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:id="@+id/NowPage"
+            android:layout_gravity="center"
+
+            android:text="1/8"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:id="@+id/btnPgDn"
+            android:text="@string/PgDn"
+            android:onClick="btnPgDnOnClick"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
